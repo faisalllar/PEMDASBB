@@ -55,7 +55,7 @@ print(f"\nJumlah hasil panen jagung dari lokasi2 (Kebun B): {jagung_lokasi2}")
 nama_lokasi3 = data_panen['lokasi3']['nama_lokasi']
 print(f"\nNama lokasi dari lokasi3: {nama_lokasi3}")
 
-# 4. Jumlah hasil panen padi dan kedelai ke dalam variabel
+# 4 & 5. Jumlah hasil panen padi dan kedelai ke dalam variabel
 hasil_padi = {lokasi: info['hasil_panen']['padi'] for lokasi, info in data_panen.items()}
 hasil_kedelai = {lokasi: info['hasil_panen']['kedelai'] for lokasi, info in data_panen.items()}
 
@@ -64,7 +64,7 @@ print(hasil_padi)
 print("\nJumlah hasil panen kedelai per lokasi:")
 print(hasil_kedelai)
 
-# 5. Percabangan untuk perhatian khusus
+# 6. Percabangan untuk kondisi kebun
 print("\nStatus setiap lokasi:")
 for lokasi, info in data_panen.items():
     padi = info['hasil_panen']['padi']
